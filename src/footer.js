@@ -50,7 +50,7 @@ class CustomFooter extends HTMLElement{
         const name = this.getAttribute('data-name') ? this.getAttribute('data-name') : "Teddy Walsh";
         const organization = this.getAttribute('data-organization') ? this.getAttribute('data-organization') : "Rochester Institute of Technology";
         const year = this.getAttribute('data-year') ? this.getAttribute('data-year') : "2022";
-        const link= this.getAttribute('data-link') ? this.getAttribute('data-link') : "https://people.rit.edu/tjw6911/";
+        const link= this.getAttribute('data-link') ? this.getAttribute('data-link') : "https://walsh-teddy.github.io/portfolio/";
 
         this.div.innerHTML = `${name} - ${organization} - ${year} <br>
         <a href="${link}">More of me <i class="fas fa-smile-beam"></i></a>`;

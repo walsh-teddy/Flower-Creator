@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/default-styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <script type="module" src="src/navbar.js"></script>
+    <script type="module" src="src/footer.js"></script>
+    <script type="module" src="src/header.js"></script>
+    <script type="module" src="src/freePlay.js"></script>
+    <title>Free Play | Flower Creator</title>
+</head>
+<body>
+  <custom-header></custom-header>
+  <custom-nav-bar data-page="freePlay"></custom-nav-bar>
+
+  <section class="section has-background-black">
+      <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="column">
+                <!-- Controls -->
+                <div class="box has-background-dark has-text-light">
+
+                    <!-- Divergence -->
+                    <div class="control">
+                        <span title="The amount around the center each petal rotates from the last">Divergence</span>
+                        <input id="divergenceSlider" type="range" min=1370 max=1380 value=1375>
+                        <span id="divergenceText">137.5° (default)</span>
+                    </div>
+
+                    <!-- Padding -->
+                    <div class="control">
+                        <span title="The distance from the center each petal moves from the last">Padding</span>
+                        <input id="paddingSlider" type=range min=0 max=8 value=4>
+                        <span id="paddingText">4 (default)</span>
+                    </div>
+
+                    <!-- Change in Divergence -->
+                    <div class="control">
+                        <span title="The amount that the divergence changes after each petal">Change In Divergence</span>
+                        <input id="divergenceChangeSlider" type=range min=-5 max=5 value=0>
+                        <span id="divergenceChangeText">+0.000° (default)</span>
+                    </div>
+
+                    <!-- Change in Padding -->
+                    <div class="control">
+                        <span title="The amount that the padding changes after each petal">Change In Padding</span>
+                        <input id="paddingChangeSlider" type=range min=-5 max=5 value=0>
+                        <span id="paddingChangeText">+0.000 (default)</span>
+                    </div>
+
+                    <!-- Lines -->
+                    <div class="control">
+                        <span title="Draw a line from the previous petal to the current">Add Connecting Lines</span>
+                        <input id="lineCheckbox" type=checkbox>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="control pt-4 columns">
+                        <div class="control column">
+                            <button id="btn-draw" class="button is-light is-large" title="Draw the flower">
+                                Draw
+                            </button>
+                        </div>
+                        <div class="control column">
+                            <button id="btn-clear" class="button is-light is-large" title="Clear the current flower">
+                                Clear
+                            </button>
+                        </div>
+                        <div class="control column">
+                            <button id="btn-random" class="button is-light is-large" title="Generate a random flower">
+                                Random
+                            </button>
+                        </div>
+                        <div class="control column">
+                            <button id="btn-reset" class="button is-light is-large" title="Reset all settings back to the default">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Details -->
+                <div class="box has-background-dark has-text-light">
+                    <div>Current Petal: <span id="currentPetal">0</span></div>
+                    <div>Current Divergence: <span id="currentDivergence">0</span>°</div>
+                    <div>Current Padding: <span id="currentPadding">0</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <custom-footer></custom-footer>
+      </div>
+  </section>
+</body>
+</html>

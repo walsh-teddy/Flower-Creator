@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/default-styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <script type="module" src="src/navbar.js"></script>
+    <script type="module" src="src/footer.js"></script>
+    <script type="module" src="src/header.js"></script>
+    <title>Documentation | Flower Creator</title>
+</head>
+<body>
+  <custom-header></custom-header>
+  <custom-nav-bar data-page="documentation"></custom-nav-bar>
+
+  <!-- Main Page -->
+  <main class="px-1 py-1 has-background-black">
+    <div class="has-background-black mr-1 p-1"> 
+      <div class="is-large p-4">
+        <!-- Title -->
+        <div class="title has-text-light">Flower Creator Documentation</div>
+
+        <!-- Noteworthy -->
+        <div class="box has-background-dark has-text-light mt-2">
+          <h2 class="subtitle has-text-weight-bold has-text-light mb-1">About</h2>
+          <p>
+            This project utilizes the canvas drawing API for javascript as well as 
+            <a href="http://www.algorithmicbotany.org/papers/abop/abop-ch4.pdf">this</a> concept of algorythmic botany to create 
+            flowers using the golden ratio. I added my own twist by adding customization for the starting divergence and padding 
+            as well as a rate of change for both that can be manipulated to make interesting creations. This project also uses 
+            local storage to save settings and highscores, the bulma css library, custom web components (the navbar, the header, 
+            and the footer), and importing data and functions from other pages to allow for ease of programming across multiple 
+            pages (such as using the same functions in free play and challenge).
+          </p>
+        </div>
+
+        <!-- Requierments -->
+        <div class="box has-background-dark has-text-light mt-2">
+          <h2 class="subtitle has-text-weight-bold has-text-light mb-1">Project Requierments</h2>
+          <p>
+            The project requierments are 
+            <a href="https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p2.md#page-documentation">here</a>
+          </p>
+        </div>
+
+        <!-- Resources Utilized -->
+        <div class="box has-background-dark has-text-light mt-2">
+          <h2 class="subtitle has-text-weight-bold has-text-light mb-1">Resources Utilized</h2>
+          <ol>
+            <li><a href="https://github.com/tonethar/IGME-330-Fall-2022/blob/main/weekly/07A.md">Week 7A III (local storage demo)</a></li>
+            <li><a href="https://github.com/tonethar/IGME-330-Master/blob/master/presentations/Intro-to-Canvas.pdf">Intro To Canvas</a></li>
+            <li><a href="https://github.com/tonethar/IGME-330-Master/blob/master/notes/HW-algorithmic-botany.md">HW-algorithmic-botany</a></li>
+            <li><a href="http://www.javascriptkit.com/javatutors/deform3.shtml">javascriptkit - Enabling/ disabling form elements using JavaScript</a></li>
+            <li><a href=https://stackoverflow.com/questions/3048680/how-to-gray-out-html-form-inputs>stackoverflow - How to gray out HTML form inputs?</a></li>
+            <li><a href="https://www.w3schools.com/JS/js_random.asp">w3schools - JavaScript Random</a></li>
+          </ol>
+        </div>
+
+        <!-- Grading -->
+        <div class="box has-background-dark has-text-light mt-2">
+          <h2 class="subtitle has-text-weight-bold has-text-light mb-1">Grading</h2>
+          <p>
+            I met most requierments for this project.
+            <ol>
+              <li>I have 4 distinct pages (with freeplay and challenge effectively both acting as app pages)</li>
+              <li>My files are organized into different folders (including the requiered src and style)</li>
+              <li>I have a navbar that updates to which page you are on</li>
+              <li>I use bulma css for all pages</li>
+              <li>I follow a minimalistic black and white with spots of color for the rainbow flowers for all pages of the site</li>
+              <li>All the controls and buttons have title attributes that help describe their functionality</li>
+              <li>While the exact wording may be unconventional at first, each control has a title to explain what it does and 
+                the user can easily see the effect of their changes</li>
+              <li>There are no errors in the code</li>
+              <li>Drawing again clears the canvas and does not break anything</li>
+              <li>Home page tells the user what the app does</li>
+              <li>The pinwheel font awesome I chose resembles a flower amd acts as a brand</li>
+              <li>Documentation page has all requiered content</li>
+              <li>I combined algorithmic botany with a game in the challenge mode</li>
+              <li>I have plenty more than 3 widgits for the user to interact</li>
+              <li>All code is neatly implimented</li>
+              <li>I have 3 web components that I use (header, navbar, and footer)</li>
+              <li>I draw directly using CanvasRenderingContext2D</li>
+            </ol>
+          </p>
+          <p class="mt-3">
+            I also went above and beyond in this project by going well beyond what we covered in class with algorythmic botany by 
+            including so many different controls, including a random setting button, and adding a challenge mode that calculates 
+            how close a guess was and how many points thats worth as well as code that keeps track of the user's high score.
+          </p>
+        </div>
+
+        <!-- ToDo -->
+        <div class="box has-background-dark has-text-light mt-2">
+          <h2 class="subtitle has-text-weight-bold has-text-light mb-1">ToDo</h2>
+          <p>
+            If I had extra time then I would've liked to include a community tab that could share 2 things. First I would want to 
+            have a global leaderboard for the high scores of everyone in challenge mode. It also would've been nice to be able to 
+            save different flower setting combinations and share them with different names to the cloud and maybe vote on other 
+            ones you liked, but that would require adding an interface and a way to load premade flowers which wouldve taken more 
+            time than I had. Also if I had more time, I would've wanted to add extra difficulties to challenge mode such as it 
+            unlocking more and more settings (rather than only guessing 1, you would need to guess 2 or 3 or 4).
+          </p>
+        </div>
+
+        <custom-footer></custom-footer>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

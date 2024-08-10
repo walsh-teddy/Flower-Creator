@@ -1,0 +1,20 @@
+ToDo:
+15) Make the documentation page
+
+Droped:
+6) Allow users to save flowers and share them to the community tab
+7) Have a global highschool list
+
+Done:
+1) Add titles to the different controls to explain what they do
+3) Padding's range should be 0-8 instead of -4 to 4
+10) Add a "reset to default settings" button
+11) Add a mode that draws a white line between everything
+2) Have an optional list that shows the current itteration, divergence, and padding live as it itterates
+4) Make sure it stops drawing when you hit draw again
+5) Make the challenge mode lol
+9) Save settigns to local storage
+8) Save highscores to local storage
+13) Make challenge mode 5 rounds
+12) Move default, max/min, and scale variables as well as setSliderValue() and generateRandomValue() to sliders.js
+14) Add a random flower button to freeplay

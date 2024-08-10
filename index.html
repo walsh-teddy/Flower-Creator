@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/default-styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <script type="module" src="src/navbar.js"></script>
+    <script type="module" src="src/footer.js"></script>
+    <script type="module" src="src/header.js"></script>
+    <script type="module" src="src/home.js"></script>
+    <title>Home | Flower Creator</title>
+</head>
+<body>
+  <custom-header></custom-header>
+  <custom-nav-bar data-page="home"></custom-nav-bar>
+
+  <section class="section has-background-black">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="hero is-large p-2">
+              <h3 class="title has-text-light">
+                Flower Creator
+              </h3>
+              <p class="subtitle has-text-light mt-6">
+                Recreate the buds of a flower using the golden ratio (137.5°) or tweak the settings and make something weird!
+              </p>
+              <a href="freePlay.html" class="button is-dark has-text-weight-bold  has-text-light mr-6">Make Something!</a>
+              <p class="subtitle has-text-light mt-6">
+                Once you feel comftorable with that, try out challenge mode and recreate the randomly generated flower to 
+                see how well you understand the patterns.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="hero">
+              <canvas id="canvas">If you can read this then this app wont work for you :(</canvas>
+            </div>
+          </div>
+        </div>
+        <custom-footer></custom-footer>
+      </div>
+  </section>
+</body>
+</html>
